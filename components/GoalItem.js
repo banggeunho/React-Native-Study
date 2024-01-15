@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const GoalItem = (text) => {
+const GoalItem = (props) => {
     return (
         <View style={styles.goalItem}>
-            <Text style={styles.goalText}>{text}</Text>
+            <Text style={styles.goalText}>{props.text}</Text>
         </View>
     );
 }
@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         backgroundColor: "#5e0acc"
     },
+    goalText: {
+        color: "white"
+    }
 })
 
 export default GoalItem;
