@@ -13,6 +13,8 @@ const GoalInput = (props) => {
         setEnteredGoalText("");
     }
 
+    console.log("start modal");
+
     return (
         <Modal visible={props.visible} animationType="slide">
             <View style={styles.inputContainer}>
